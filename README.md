@@ -2,10 +2,14 @@
 
 ## The Goal
 
-This is a simple two-screen podcasts app. A basic mockup is provided below:
+This is a simple two-screen podcasts app. A basic mockup screenshots are provided below:
 
-[![](https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastListScreen.jpg)](https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastDetailsScreen.jpg)
+## 📸 Screenshots
 
+<div style="text-align: center;">
+  <img src="https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastListScreen.jpg" alt="Podcast List Screen" width="45%" />
+  <img src="https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastDetailsScreen.jpg" alt="Podcast Details Screen" width="45%" />
+</div>
 
 #### Screen 1
 
