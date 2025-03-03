@@ -1,12 +1,8 @@
 # Mobile Developer Coding Challenge (Junior)
 
-Please read the instructions below carefully before starting the coding challenge.
-
-Once submitted, the mobile team will review your work and get back to you as soon as possible.
-
 ## The Goal
 
-You will be building a simple two-screen podcasts app. A basic mockup is provided below:
+This is a simple two-screen podcasts app. A basic mockup is provided below:
 
 [![](https://i.imgur.com/yi8w1s8.png)](https://i.imgur.com/yi8w1s8.png)
 
@@ -23,23 +19,47 @@ You will be building a simple two-screen podcasts app. A basic mockup is provide
 - [ ] The Favourite button should have two states: Favourite and Favourited.
 - [ ] When tapping the Favourite button, the label should change to Favourited, and vice-versa. There is <ins>**NO**</ins> need to handle the actual favourite action.
 
-## Details
+## 🚀 Improvements Implemented
 
-- [ ] Create a new repository to work in. Do <ins>**NOT**</ins> fork this repository.
-- [ ] Please use the code from this repository as a starting point to complete the challenge. If you want to instead start from scratch, that is also an option, but is not required nor expected.
-- [ ] Must be written in Kotlin and use Jetpack Compose for UI.
-- [ ] The initial project was created using Android Studio Ladybug Feature Drop | 2024.2.2 Patch 1. Make sure to have an updated version of Android Studio before starting the challenge.
-- [ ] For the API, fetch the data using the Repository instance in the PodcastListViewModel class. If needed, check the information provided by the API used:
-	 - [ ] The following endpoint is used to fetch podcast data: https://www.listennotes.com/api/docs/?lang=kotlin&test=1#get-api-v2-best_podcasts
-	 - [ ] No API key required, you can simply use the mock server to fetch test data. [More information here](https://www.listennotes.help/article/48-how-to-test-the-podcast-api-without-an-api-key "More information here").
+During the development of this challenge, several improvements were made to enhance performance, maintainability, and user experience:
 
-## The Evaluation
+✅ **Jetpack Compose UI Enhancements**
+- Used **LazyColumn** for smooth, efficient scrolling of podcast lists.
+- Improved **Podcast Details UI** to match the provided design, including proper **padding, spacing, and image scaling**.
 
-Your code will be evaluated based on the following criteria:
+✅ **Navigation & State Management**
+- Implemented **Jetpack Navigation Compose** for seamless screen transitions.
+- Used **StateFlow** in `PodcastListViewModel` for efficient state management.
 
-- [ ] The code should compile.
-- [ ] No crashes, bugs, or compiler warnings.
-- [ ] App operates as outlined above.
-- [ ] Conforms to modern development principles.
-- [ ] Code is easy to understand. Bonus points for documentation.
-- [ ] Commit history is consistent, easy to follow and understand.
+✅ **Performance Optimizations**
+- Used **Coroutines & ViewModelScope** for non-blocking API calls.
+- Implemented **Result wrapper** for better error handling in `PodcastRepository`.
+
+✅ **Code Readability & Maintainability**
+- Added **structured documentation** to `MainActivity`, `ViewModel`, `Repository`, and UI components.
+- Followed **MVVM architecture** to separate concerns between UI, business logic, and data layers.
+
+## Suggested Future Enhancements
+
+Although the app meets the challenge requirements, below are some potential improvements for future iterations:
+
+### UI/UX Enhancements
+- Add **Swipe to Refresh** to allow users to reload podcasts.
+- Improve **podcast item layout** with better alignment and animations.
+- Implement **Dark Mode** support.
+- Implement **Pagination** for smooth data scroll
+
+### Networking Improvements
+- Add **offline caching** with Room Database or DataStore.
+
+### Favourite Podcast Feature
+- Persist **Favourite podcasts** using Room or SharedPreferences.
+- Add **Filter & Sorting** options to show Favourited podcasts separately.
+
+### Testing & Code Quality
+- Implement **Unit Tests & UI Tests** for ViewModel and Composables.
+- Use **Mockk** for testing API responses.
+- Improve **logging and analytics** to track user behavior.
+
+## Conclusion
+- This project successfully implements a **Jetpack Compose-based podcast app** following modern **Android development practices**. With additional enhancements like caching, testing, and UI refinements, this could be further optimized for production-level quality.
