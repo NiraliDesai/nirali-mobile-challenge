@@ -4,7 +4,8 @@
 
 This is a simple two-screen podcasts app. A basic mockup is provided below:
 
-[![](https://i.imgur.com/yi8w1s8.png)](https://i.imgur.com/yi8w1s8.png)
+[![](https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastListScreen.jpg)](https://github.com/NiraliDesai/nirali-mobile-challenge/blob/main/PodcastDetailsScreen.jpg)
+
 
 #### Screen 1
 
